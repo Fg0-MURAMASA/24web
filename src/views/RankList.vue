@@ -24,11 +24,51 @@
         </div>
         <img src="./img/decoration.png" alt="" id="decoration">
     </div>
-    <div id="line"><h3>Ranking List of Computer System</h3></div>
+    <div id="line"><h3>TOP10 of Computer System</h3></div>
     <div id="rank_area">
+      <div class="inner" id="in_header"><p class="inner_name">ID</p><p class="inner_rank">PLACE</p><p class="inner_test">TASK</p><p class="inner_point">POINT</p></div>
+      <div class="inner" id="in1"><p class="inner_name">-</p><p class="inner_rank">-</p><p class="inner_test">-</p><p class="inner_point">-</p></div>
+      <div class="inner" id="in2"><p class="inner_name">-</p><p class="inner_rank">-</p><p class="inner_test">-</p><p class="inner_point">-</p></div>
+      <div class="inner" id="in3"><p class="inner_name">-</p><p class="inner_rank">-</p><p class="inner_test">-</p><p class="inner_point">-</p></div>
+      <div class="inner" id="in4"><p class="inner_name">-</p><p class="inner_rank">-</p><p class="inner_test">-</p><p class="inner_point">-</p></div>
+      <div class="inner" id="in5"><p class="inner_name">-</p><p class="inner_rank">-</p><p class="inner_test">-</p><p class="inner_point">-</p></div>
+      <div class="inner" id="in6"><p class="inner_name">-</p><p class="inner_rank">-</p><p class="inner_test">-</p><p class="inner_point">-</p></div>
+      <div class="inner" id="in7"><p class="inner_name">-</p><p class="inner_rank">-</p><p class="inner_test">-</p><p class="inner_point">-</p></div>
+      <div class="inner" id="in8"><p class="inner_name">-</p><p class="inner_rank">-</p><p class="inner_test">-</p><p class="inner_point">-</p></div>
+      <div class="inner" id="in9"><p class="inner_name">-</p><p class="inner_rank">-</p><p class="inner_test">-</p><p class="inner_point">-</p></div>
+      <div class="inner" id="in10"><p class="inner_name">-</p><p class="inner_rank">-</p><p class="inner_test">-</p><p class="inner_point">-</p></div>
     </div>
   </template>
   <style>
+  .inner:nth-child(even){
+    background-color: #FFFFFF;
+  }
+  .inner:nth-child(odd){
+    background-color: #F3F3F3;
+  }
+  .inner:hover{
+    background-color: #BD94FF;
+  }
+  .inner{
+    width: 1000px;
+    height: 55px;
+  }
+  .inner>p{
+    display: inline-block;
+    width: 250px;
+    height: 55px;
+    text-align: center;
+    color: black;
+    font-weight: 500px;
+    font-size: 22px;
+    line-height: 55px;
+  }
+  #in_header{
+    background-color: black;
+  }
+  #in_header>p{
+    color: white;
+  }
   #bpp{
     display: none;
   }
@@ -41,10 +81,10 @@
   #rank_area{
     position: absolute;
     width: 1000px;
-    height: 600px;
+    height: 605px;
     top: 252px;
     left: 650px;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
   }
   #line>h3{
     position: relative;
@@ -93,7 +133,7 @@
     display: block;
     width: 360px;
     height: 30px;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
     margin: auto;
     margin-top: 40px;
     border-radius: 20px;
@@ -128,7 +168,7 @@
   }
   #id_card{
     width: 500px;
-    height: 700px;
+    height: 708px;
     margin-left: 150px;
     margin-top: 150px;
     background-color: #00B0FF;
@@ -143,18 +183,39 @@
   }
   </style>
   <script>
-  import Vue from 'vue';
-  const app = {
-  data() {
-    return {
-      sites: [
-        { text: 'Google' },
-        { text: 'Runoob' },
-        { text: 'Taobao' }
-      ]
-    }
-  }
-}
+  // var i = 1;
+  // document.getElementById("to_c").onclick = function(){
+  //   if(i != 1){
+  //     document.getElementById("id_card").style.backgroundColor = "#00B0FF";
+  //     document.getElementById("line").style.backgroundColor = "#00B0FF";
+  //     document.getElementById("decoration").src = "./img/decoration.png"
+  //     i=1;
+  //   }
+  // } 
+  // document.getElementById("to_ai").onclick = function(){
+  //   if(i != 2){
+  //     document.getElementById("id_card").style.backgroundColor = "#6bb381";
+  //     document.getElementById("line").style.backgroundColor = "#6bb381";
+  //     document.getElementById("decoration").src = "./img/decoration2.png"
+  //     i=2;
+  //   }
+  // } 
+  // document.getElementById("to_fr").onclick = function(){
+  //   if(i != 3){
+  //     document.getElementById("id_card").style.backgroundColor = "#936bb3";
+  //     document.getElementById("line").style.backgroundColor = "#936bb3";
+  //     document.getElementById("decoration").src = "./img/decoration3.png"
+  //     i=3;
+  //   }
+  // }
 
-Vue.createApp(app).mount('#app')
+  // document.getElementById("to_ba").onclick = function(){
+  //   if(i != 4){
+  //     document.getElementById("id_card").style.backgroundColor = "#585858";
+  //     document.getElementById("line").style.backgroundColor = "#585858";
+  //     document.getElementById("decoration").src = "./img/decoration4.png"
+  //     i=4;
+  //   }
+  // }  
+
 </script>
